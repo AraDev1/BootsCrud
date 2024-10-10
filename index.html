@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="height: 1500px; padding: 5px;">
+    <div id="TandF" class="container">
+        <div id="buttonId" class="d-flex flex-row-reverse container">
+            <button class="btn btn-warning" onclick="openAddUser()">Add User</button>
+            <button class="btn btn-warning" onclick="Reverse()">Reverse</button>
+        </div>
+        <table id="table1" class="table table-striped table-bordered">
+            <tr id="trhead">
+                <th>UserName</th>
+                <th>Password</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Properties</th>
+            </tr>
+            <tbody id="rowBody">
+            </tbody>
+        </table>
+    </div>
+    <div id="editDiv" class="position-sticky">
+        <form id="editForm">
+            <div id="buttonCloseEdit">
+                <button type="button" id="buttonCloseEdit2" onclick="closeEdit()">Close</button><br>
+            </div>
+            <label for="UserName">User Name</label><br>
+            <input type="text" id="userEdit" name="UserName"><br>
+            <label for="Password">Password</label><br>
+            <input type="text" id="passEdit" name="Password"><br>
+            <label for="FirstName">First Name</label><br>
+            <input type="text" id="fNameEdit" name="FirstName"><br>
+            <label for="LastName">Last Name</label><br>
+            <input type="text" id="lNameEdit" name="LastName"><br><br>
+            <div id="buttonSave2">
+                <button type="reset" id="saveEdit">Edit</button>
+            </div>
+        </form>
+    </div>
+    <div id="formId" class="d-flex justify-content-center position-sticky" style="top: 10%; bottom: 10%;">
+        <form id="myForm" style="background-color: rgb(183, 214, 214); border: 1px solid black; padding: 10px;">
+            <div id="buttonClose" class="d-flex flex-row-reverse">
+                <button type="button" id="buttonClose2" class="btn" style="background-color: aliceblue;"
+                    onclick="closeAddUser()">Close</button><br>
+            </div>
+            <h1>Your Info</h1>
+            <label for="UserName">User Name</label><br>
+            <input type="text" id="User" name="UserName"><br>
+            <label for="Password">Password</label><br>
+            <input type="password" id="Pass" name="Password"><br>
+            <label for="FirstName">First Name</label><br>
+            <input type="text" id="fName" name="FirstName"><br>
+            <label for="LastName">Last Name</label><br>
+            <input type="text" id="lName" name="LastName"><br><br>
+            <div id="buttonSave">
+                <button type="reset" class="btn" style="background-color: aliceblue;" onclick="saveUser()">Save</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
