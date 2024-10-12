@@ -46,6 +46,11 @@ function saveUser() {
     const fistName = document.getElementById("fName").value;
     const lastName = document.getElementById("lName").value;
 
+    document.getElementById("User").value = null
+    document.getElementById("Pass").value = null
+    document.getElementById("fName").value = null
+    document.getElementById("lName").value = null
+
     const params = {
         userName,
         password,
@@ -109,8 +114,11 @@ function render() {
         headerButton2.setAttribute("id", headerNum + "/" + 6);
         headerButton2.onclick = function () {
 
-            document.getElementById("editForm").style.visibility = "visible";
-            num = headerButton2.id.split("/")[0];
+            var myModal = new bootstrap.Modal(document.getElementById("editModal"), {
+                keyboard: false
+              })
+              myModal.show()
+            num = headerButton1.id
 
             document.getElementById("userEdit").value = info[num].user;
             document.getElementById("passEdit").value = info[num].password;
@@ -126,8 +134,6 @@ function render() {
             let lName = document.getElementById("lNameEdit").value;
 
             edit(user, password, fName, lName, num)
-
-            document.getElementById("editForm").style.visibility = "hidden";
 
             render();
         }
@@ -152,7 +158,7 @@ function deleteUser(Id) {
     infoStorage()
 }
 
-/* function edit(user, password, fName, lName, Id) {
+ function edit(user, password, fName, lName, Id) {
  
    info[Id].user = user
    info[Id].password = password
@@ -160,4 +166,4 @@ function deleteUser(Id) {
    info[Id].lName = lName
  
    infoStorage()
-} */
+} 

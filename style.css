@@ -22,18 +22,12 @@ th {
 }
 
 #editForm {
-    visibility: hidden;
     background-color: rgb(177, 199, 191);
     width: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 3px;
     padding-right: 15px;
-}
-
-#formId {
-    margin-left: auto;
-    visibility: hidden;
 }
 
 #editDiv {
