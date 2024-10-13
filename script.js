@@ -98,7 +98,7 @@ function render() {
 
         const headerButton1 = document.createElement("button");
         headerButton1.innerHTML = "Delete";
-        headerButton1.setAttribute("class", "btn btn-danger buttonHead");
+        headerButton1.setAttribute("class", "buttonHead");
         headerButton1.setAttribute("id", headerNum);
         headerButton1.onclick = function () {
 
@@ -110,7 +110,7 @@ function render() {
 
         const headerButton2 = document.createElement("button");
         headerButton2.innerHTML = "Edit";
-        headerButton2.setAttribute("class", "buttonHead2 btn btn-success");
+        headerButton2.setAttribute("class", "buttonHead2");
         headerButton2.setAttribute("id", headerNum + "/" + 6);
         headerButton2.onclick = function () {
 

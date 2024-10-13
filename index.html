@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body style="height: 1500px; padding: 5px;">
+<body style="padding: 5px; background-image:url('body_background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
     <div id="TandF" class="container">
         <div id="buttonId" class="d-flex flex-row-reverse container">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
@@ -36,14 +36,14 @@
     </div>
     <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="background-image: url('popup_image.jpg'); background-repeat: no-repeat; background-size: cover;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Your Info</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="myForm"
-                        style="background-color: rgb(183, 214, 214); border: 1px solid black; padding: 10px;">
+                    <form id="myForm" style="display: flex;  border: 1px solid black; padding: 10px;">
+                        <div>
                         <label for="UserName">User Name</label><br>
                         <input type="text" id="User" name="UserName"><br>
                         <label for="Password">Password</label><br>
@@ -52,6 +52,10 @@
                         <input type="text" id="fName" name="FirstName"><br>
                         <label for="LastName">Last Name</label><br>
                         <input type="text" id="lName" name="LastName"><br><br>
+                        </div>
+                        <div>
+                            <img src="info.png" style="width: 250px;">
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -65,10 +69,11 @@
 
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModal" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="background-image: url(edit_background.png); background-size: cover;">
                 <div class="modal-body">
-                    <form id="editForm">
-                        <label for="UserName">User Name</label><br>
+                    <form id="editForm" style="display: flex; margin-bottom: -16px;">
+                        <div>
+                        <label for="UserName" style="color: auto;">User Name</label><br>
                         <input type="text" id="userEdit" name="UserName"><br>
                         <label for="Password">Password</label><br>
                         <input type="text" id="passEdit" name="Password"><br>
@@ -76,6 +81,10 @@
                         <input type="text" id="fNameEdit" name="FirstName"><br>
                         <label for="LastName">Last Name</label><br>
                         <input type="text" id="lNameEdit" name="LastName"><br><br>
+                        </div>
+                        <div>
+                            <img src="edit_img.png" style="height: 210px; margin-left: 15px; padding-left: 15px;">
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">

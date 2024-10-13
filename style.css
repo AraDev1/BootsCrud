@@ -3,13 +3,29 @@ th {
 }
 
 .buttonHead {
+    border: 0;
+    transition-duration: 0.3s;
     width: 50%;
+    height: auto;
     background-color: rgb(150, 70, 66);
 }
 
 .buttonHead2 {
+    border: 0;
+    transition-duration: 0.3s;
     width: 50%;
+    height: auto;
     background-color: rgb(130, 130, 57);
+}
+
+.buttonHead2:hover{
+    color: white;
+    background-color: rgb(111, 144, 61);
+}
+
+.buttonHead:hover{
+    color: white;
+    background-color: rgb(181, 8, 8);
 }
 
 #TandF {
@@ -22,7 +38,6 @@ th {
 }
 
 #editForm {
-    background-color: rgb(177, 199, 191);
     width: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
